@@ -2,7 +2,7 @@ ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 # Install gpsd
-RUN apk add --no-cache gpsd multitail
+RUN apk add --no-cache gpsd
 
 # Copy entrypoint
 COPY run.sh /
