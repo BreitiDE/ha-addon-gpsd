@@ -22,15 +22,15 @@ ports:
 ports_description:
   2947/tcp: "gpsd TCP port"
 
-uart: true        # <-- auto-mapping aller seriellen USB-Geräte, statt hardcoded devices
+uart: true
 udev: true
 
 options:
-  device: null    # <-- null = Pflichtfeld, User muss wählen
+  device: null
   baud: 9600
   gpsd_options: "-n"
 
 schema:
-  device: "device(subsystem=tty)"   # <-- echte Geräteauswahl in der UI
+  device: "device(subsystem=tty)"
   baud: int
   gpsd_options: str
