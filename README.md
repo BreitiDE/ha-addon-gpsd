@@ -1,6 +1,9 @@
 # GPSD – Home Assistant Add-on
 # forked from leo-stan ( https://github.com/leo-stan/ha-addon-gpsd )
 
+# This addon works with gps, delivers data ( eg. cgps ) but gpsd integration becomes quickly unknown while cgps is still showing updates with data. Currently no idea how to fix
+
+
 Run [gpsd](https://gpsd.io/) inside a Home Assistant OS container, exposing GPS data over TCP port **2947** for any client on your LAN.
 
 ## Supported Hardware
