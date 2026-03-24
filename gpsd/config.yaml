@@ -28,7 +28,7 @@ udev: true
 options:
   device: null
   baud: 9600
-  gpsd_options: "-n -D 2"
+  gpsd_options: "-n"
 
 schema:
   device: "device(subsystem=tty)"
