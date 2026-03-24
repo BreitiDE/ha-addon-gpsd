@@ -1,0 +1,36 @@
+name: GPSD
+description: Run gpsd in a container to expose GPS data over TCP
+version: 0.2.0
+slug: gpsd
+url: https://github.com/leo-stan/ha-addon-gpsd
+homeassistant: "2023.1.0"
+
+arch:
+  - aarch64
+  - armv7
+  - armhf
+  - amd64
+
+startup: services
+boot: auto
+init: false
+
+host_network: false
+
+ports:
+  2947/tcp: 2947
+ports_description:
+  2947/tcp: "gpsd TCP port"
+
+uart: true        # <-- auto-mapping aller seriellen USB-Geräte, statt hardcoded devices
+udev: true
+
+options:
+  device: null    # <-- null = Pflichtfeld, User muss wählen
+  baud: 9600
+  gpsd_options: "-n"
+
+schema:
+  device: "device(subsystem=tty)"   # <-- echte Geräteauswahl in der UI
+  baud: int
+  gpsd_options: str
