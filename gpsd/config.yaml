@@ -3,7 +3,7 @@ description: Run gpsd in a container to expose GPS data over TCP
 version: 0.2.0
 slug: gpsd
 url: https://github.com/leo-stan/ha-addon-gpsd
-homeassistant: "2023.1.0"
+homeassistant: "2025.1.0"
 
 arch:
   - aarch64
