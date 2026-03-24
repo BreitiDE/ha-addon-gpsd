@@ -1,4 +1,5 @@
 # GPSD – Home Assistant Add-on
+# forked from leo-stan ( https://github.com/leo-stan/ha-addon-gpsd )
 
 Run [gpsd](https://gpsd.io/) inside a Home Assistant OS container, exposing GPS data over TCP port **2947** for any client on your LAN.
 
